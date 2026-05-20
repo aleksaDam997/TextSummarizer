@@ -14,7 +14,7 @@ class DataTransformation:
 
         input_encodings = self.tokenizer(
             example_batch['dialogue'],
-            max_length=1024,
+            max_length=512,
             truncation=True
         )
 
@@ -23,6 +23,7 @@ class DataTransformation:
             max_length=128,
             truncation=True
         )
+        
 
         return {
             'input_ids': input_encodings['input_ids'],

@@ -271,3 +271,808 @@ ValueError: Converting from SentencePiece and Tiktoken failed, if a converter fo
 [2026-05-19 22:59:27,717: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
 [2026-05-19 22:59:27,865: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
 [2026-05-19 22:59:32,899: INFO: main]: Stage Data Transformation stage completed.
+[2026-05-20 16:07:55,701: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:07:55,726: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:07:55,729: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:07:55,733: INFO: common]: Directory created at: artifacts/model_trainer
+[2026-05-20 16:16:03,382: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:16:03,387: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:16:03,392: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:16:03,392: INFO: common]: Directory created at: artifacts/model_trainer
+[2026-05-20 16:17:19,016: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:17:19,024: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:17:19,026: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:17:19,028: INFO: common]: Directory created at: artifacts/model_trainer
+[2026-05-20 16:19:09,799: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:19:09,803: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:19:09,804: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:19:09,808: INFO: common]: Directory created at: artifacts/model_trainer
+[2026-05-20 16:19:10,093: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 16:19:10,161: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-20 16:19:10,331: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 16:19:10,337: WARNING: _http]: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-05-20 16:19:10,381: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-20 16:19:10,541: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-20 16:19:10,693: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-20 16:19:11,258: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 16:19:11,281: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-20 16:19:11,425: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+[2026-05-20 16:19:11,716: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 16:19:11,741: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-20 16:19:11,890: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+[2026-05-20 16:19:12,039: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+[2026-05-20 16:19:12,193: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+[2026-05-20 16:19:12,395: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/xet-read-token/40d588fdab0cc077b80d950b300bf66ad3c75b92 "HTTP/1.1 200 OK"
+[2026-05-20 16:32:48,263: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-20 16:32:48,269: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:32:48,270: ERROR: common]: Error reading YAML file at params.yaml: 'charmap' codec can't decode byte 0x8d in position 465: character maps to <undefined>
+[2026-05-20 16:32:48,270: ERROR: main]: 'charmap' codec can't decode byte 0x8d in position 465: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 12, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 10, in initiate_data_ingestion
+    config = ConfigurationManager()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\config\configuration.py", line 8, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\utils\common.py", line 36, in read_yaml
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\utils\common.py", line 25, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\__init__.py", line 79, in load
+    loader = Loader(stream)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\loader.py", line 34, in __init__
+    Reader.__init__(self, stream)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\reader.py", line 85, in __init__
+    self.determine_encoding()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\reader.py", line 124, in determine_encoding
+    self.update_raw()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\reader.py", line 178, in update_raw
+    data = self.stream.read(size)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 465: character maps to <undefined>
+[2026-05-20 16:33:04,785: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-20 16:33:04,785: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:33:04,785: ERROR: common]: Error reading YAML file at params.yaml: 'charmap' codec can't decode byte 0x8d in position 465: character maps to <undefined>
+[2026-05-20 16:33:04,785: ERROR: main]: 'charmap' codec can't decode byte 0x8d in position 465: character maps to <undefined>
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 12, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 10, in initiate_data_ingestion
+    config = ConfigurationManager()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\config\configuration.py", line 8, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\utils\common.py", line 36, in read_yaml
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\utils\common.py", line 25, in read_yaml
+    content = yaml.safe_load(yaml_file)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\__init__.py", line 79, in load
+    loader = Loader(stream)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\loader.py", line 34, in __init__
+    Reader.__init__(self, stream)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\reader.py", line 85, in __init__
+    self.determine_encoding()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\reader.py", line 124, in determine_encoding
+    self.update_raw()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\yaml\reader.py", line 178, in update_raw
+    data = self.stream.read(size)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8d in position 465: character maps to <undefined>
+[2026-05-20 16:35:28,303: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-20 16:35:28,303: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:35:28,303: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:35:28,310: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:35:28,311: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-20 16:35:28,317: INFO: data_ingestion]: File already exists.
+[2026-05-20 16:35:28,318: INFO: data_ingestion]: Unziped file already exists.
+[2026-05-20 16:35:28,319: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-20 16:35:28,319: INFO: main]: stage Data Transformation stage initiated
+[2026-05-20 16:35:28,321: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:35:28,325: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:35:28,326: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:35:28,326: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-20 16:35:28,567: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 16:35:28,591: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-20 16:35:28,747: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-20 16:35:28,747: WARNING: _http]: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-05-20 16:35:28,772: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-20 16:35:28,934: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-20 16:35:29,081: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-20 16:35:31,764: INFO: main]: Stage Data Transformation stage completed.
+[2026-05-20 16:35:31,764: INFO: main]: stage Model training stage initiated
+[2026-05-20 16:35:31,766: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 16:35:31,769: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 16:35:31,770: INFO: common]: Directory created at: artifacts
+[2026-05-20 16:35:31,770: INFO: main]: Stage Model training stage completed.
+[2026-05-20 22:55:43,213: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 22:55:43,231: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 22:55:43,233: INFO: common]: Directory created at: artifacts
+[2026-05-20 22:55:43,234: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 22:56:45,250: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 22:56:45,256: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 22:56:45,257: INFO: common]: Directory created at: artifacts
+[2026-05-20 22:56:45,259: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 22:57:21,593: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 22:57:21,598: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 22:57:21,600: INFO: common]: Directory created at: artifacts
+[2026-05-20 22:57:21,601: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 23:01:36,900: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 23:01:36,904: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 23:01:36,905: INFO: common]: Directory created at: artifacts
+[2026-05-20 23:01:36,907: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 23:06:15,813: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 23:06:15,817: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 23:06:15,819: INFO: common]: Directory created at: artifacts
+[2026-05-20 23:06:15,820: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 23:06:36,042: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 23:06:36,047: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 23:06:36,048: INFO: common]: Directory created at: artifacts
+[2026-05-20 23:06:36,049: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 23:08:49,861: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 23:08:49,866: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 23:08:49,868: INFO: common]: Directory created at: artifacts
+[2026-05-20 23:08:49,869: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 23:09:33,359: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-20 23:09:33,364: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-20 23:09:33,366: INFO: common]: Directory created at: artifacts
+[2026-05-20 23:09:33,367: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-20 23:11:10,470: INFO: rouge_scorer]: Using default tokenizer.
+[2026-05-21 00:03:46,437: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-21 00:03:46,440: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:03:46,444: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:03:46,444: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:03:46,447: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-21 00:03:46,447: INFO: data_ingestion]: File already exists.
+[2026-05-21 00:03:46,448: INFO: data_ingestion]: Unziped file already exists.
+[2026-05-21 00:03:46,448: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-21 00:03:46,448: INFO: main]: stage Data Transformation stage initiated
+[2026-05-21 00:03:46,451: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:03:46,457: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:03:46,458: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:03:46,458: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-21 00:03:46,784: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:03:46,814: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:03:47,027: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:03:47,057: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:03:47,214: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-21 00:03:47,364: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-21 00:03:50,781: ERROR: main]: [Errno 22] Invalid argument: 'C:/Users/Korisnik/Desktop/ml_projects/summerizer/TextSummarizer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 16, in initiate_data_transformation
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\components\data_transformation.py", line 38, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir, "samsum_dataset"))
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\arrow_dataset.py", line 1643, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\arrow_dataset.py", line 1667, in _save_to_disk_single
+    writer = ArrowWriter(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\arrow_writer.py", line 441, in __init__
+    self.stream = self._fs.open(path, "wb")
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+OSError: [Errno 22] Invalid argument: 'C:/Users/Korisnik/Desktop/ml_projects/summerizer/TextSummarizer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+[2026-05-21 00:22:26,430: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-21 00:22:26,432: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:22:26,435: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:22:26,436: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:22:26,436: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-21 00:22:26,436: INFO: data_ingestion]: File already exists.
+[2026-05-21 00:22:26,437: INFO: data_ingestion]: Unziped file already exists.
+[2026-05-21 00:22:26,437: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-21 00:22:26,437: INFO: main]: stage Data Transformation stage initiated
+[2026-05-21 00:22:26,441: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:22:26,447: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:22:26,447: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:22:26,448: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-21 00:22:26,706: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:22:26,708: WARNING: _http]: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-05-21 00:22:26,736: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:22:26,902: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:22:26,932: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:22:27,080: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-21 00:22:27,285: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-21 00:22:29,654: ERROR: main]: [Errno 22] Invalid argument: 'C:/Users/Korisnik/Desktop/ml_projects/summerizer/TextSummarizer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 16, in initiate_data_transformation
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\components\data_transformation.py", line 38, in convert
+    dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir, "samsum_dataset"))
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\dataset_dict.py", line 1360, in save_to_disk
+    dataset.save_to_disk(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\arrow_dataset.py", line 1643, in save_to_disk
+    for job_id, done, content in Dataset._save_to_disk_single(**kwargs):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\arrow_dataset.py", line 1667, in _save_to_disk_single
+    writer = ArrowWriter(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\arrow_writer.py", line 441, in __init__
+    self.stream = self._fs.open(path, "wb")
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\spec.py", line 1349, in open
+    f = self._open(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 210, in _open
+    return LocalFileOpener(path, mode, fs=self, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 387, in __init__
+    self._open()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fsspec\implementations\local.py", line 392, in _open
+    self.f = open(self.path, mode=self.mode)
+OSError: [Errno 22] Invalid argument: 'C:/Users/Korisnik/Desktop/ml_projects/summerizer/TextSummarizer/artifacts/data_transformation/samsum_dataset/train/data-00000-of-00001.arrow'
+[2026-05-21 00:25:42,272: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-21 00:25:42,276: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:25:42,281: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:25:42,282: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:25:42,284: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-21 00:25:49,539: INFO: data_ingestion]: File is downloaded
+[2026-05-21 00:25:49,540: INFO: data_ingestion]: Unziped file already exists.
+[2026-05-21 00:25:49,541: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-21 00:25:49,541: INFO: main]: stage Data Transformation stage initiated
+[2026-05-21 00:25:49,545: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:25:49,549: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:25:49,551: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:25:49,552: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-21 00:25:49,825: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:25:49,869: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:25:50,058: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:25:50,104: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:25:50,269: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-21 00:25:50,423: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-21 00:25:50,645: ERROR: main]: Directory artifacts/data_ingestion/samsum_dataset not found
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 23, in <module>
+    data_transformation_pipeline.initiate_data_transformation()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 16, in initiate_data_transformation
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_2_data_transformation_pipeline.py", line 14, in initiate_data_transformation
+    data_transformation.convert()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\components\data_transformation.py", line 36, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\datasets\load.py", line 1562, in load_from_disk
+    raise FileNotFoundError(f"Directory {dataset_path} not found")
+FileNotFoundError: Directory artifacts/data_ingestion/samsum_dataset not found
+[2026-05-21 00:27:56,204: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-21 00:27:56,204: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:27:56,210: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:27:56,210: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:27:56,212: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-21 00:27:56,212: INFO: data_ingestion]: File already exists.
+[2026-05-21 00:27:56,340: INFO: data_ingestion]: Unzipped file created successfully.
+[2026-05-21 00:27:56,341: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-21 00:27:56,341: INFO: main]: stage Data Transformation stage initiated
+[2026-05-21 00:27:56,343: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:27:56,346: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:27:56,346: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:27:56,346: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-21 00:27:56,697: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:27:56,698: WARNING: _http]: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-05-21 00:27:56,725: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:27:56,954: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 00:27:56,983: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-21 00:27:57,137: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-21 00:27:57,290: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-21 00:28:01,957: INFO: main]: Stage Data Transformation stage completed.
+[2026-05-21 00:28:01,957: INFO: main]: stage Model training stage initiated
+[2026-05-21 00:28:01,960: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:28:01,963: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:28:01,964: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:28:01,965: INFO: main]: Stage Model training stage completed.
+[2026-05-21 00:28:01,965: INFO: main]: stage Model evaluation stage initiated
+[2026-05-21 00:28:01,968: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 00:28:01,972: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 00:28:01,972: INFO: common]: Directory created at: artifacts
+[2026-05-21 00:28:01,976: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 00:28:01,976: ERROR: main]: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 419, in cached_files
+    hf_hub_download(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 129, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 617, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\models\auto\configuration_auto.py", line 1356, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 569, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 624, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 276, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 468, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 419, in cached_files
+    hf_hub_download(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 129, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 45, in <module>
+    model_evaluation_pipeline.initiate_model_evaluation()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_4_model_evaluation_pipeline.py", line 16, in initiate_model_evaluation
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_4_model_evaluation_pipeline.py", line 14, in initiate_model_evaluation
+    model_evaluation.evaluate()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\components\model_evaluation.py", line 47, in evaluate
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path, local_files_only = True)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 621, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 531, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 569, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 624, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 276, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 468, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+[2026-05-21 01:03:45,417: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-21 01:03:45,419: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:03:45,423: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:03:45,424: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:03:45,424: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-21 01:03:45,425: INFO: data_ingestion]: File already exists.
+[2026-05-21 01:03:45,528: INFO: data_ingestion]: Unzipped file created successfully.
+[2026-05-21 01:03:45,528: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-21 01:03:45,528: INFO: main]: stage Data Transformation stage initiated
+[2026-05-21 01:03:45,530: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:03:45,533: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:03:45,534: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:03:45,534: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-21 01:03:45,804: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 01:03:45,835: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-21 01:03:46,069: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 01:03:46,099: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-21 01:03:46,251: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-21 01:03:46,401: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-21 01:03:49,109: INFO: main]: Stage Data Transformation stage completed.
+[2026-05-21 01:03:49,109: INFO: main]: stage Model training stage initiated
+[2026-05-21 01:03:49,118: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:03:49,123: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:03:49,125: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:03:49,127: INFO: common]: Directory created at: artifacts/model_trainer
+[2026-05-21 01:03:49,127: INFO: main]: Stage Model training stage completed.
+[2026-05-21 01:03:49,127: INFO: main]: stage Model evaluation stage initiated
+[2026-05-21 01:03:49,130: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:03:49,134: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:03:49,135: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:03:49,135: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:03:49,136: ERROR: main]: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 419, in cached_files
+    hf_hub_download(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 129, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 617, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\models\auto\configuration_auto.py", line 1356, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 569, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 624, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 276, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 468, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 419, in cached_files
+    hf_hub_download(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 85, in _inner_fn
+    validate_repo_id(arg_value)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\huggingface_hub\utils\_validators.py", line 129, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\main.py", line 45, in <module>
+    model_evaluation_pipeline.initiate_model_evaluation()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_4_model_evaluation_pipeline.py", line 16, in initiate_model_evaluation
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\stage_4_model_evaluation_pipeline.py", line 14, in initiate_model_evaluation
+    model_evaluation.evaluate()
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\components\model_evaluation.py", line 47, in evaluate
+    tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path, local_files_only = True)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\models\auto\tokenization_auto.py", line 621, in from_pretrained
+    config = PreTrainedConfig.from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 531, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 569, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\configuration_utils.py", line 624, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 276, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\utils\hub.py", line 468, in cached_files
+    raise OSError(f"{e}") from e
+OSError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'artifacts/model_trainer/pegasus-lora-merged'. Use `repo_type` argument if needed.
+[2026-05-21 01:04:51,538: INFO: main]: stage Data Ingestion stage initiated
+[2026-05-21 01:04:51,541: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:04:51,544: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:04:51,545: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:04:51,545: INFO: common]: Directory created at: artifacts/data_ingestion
+[2026-05-21 01:04:51,547: INFO: data_ingestion]: File already exists.
+[2026-05-21 01:04:51,650: INFO: data_ingestion]: Unzipped file created successfully.
+[2026-05-21 01:04:51,651: INFO: main]: Stage Data Ingestion stage completed.
+[2026-05-21 01:04:51,651: INFO: main]: stage Data Transformation stage initiated
+[2026-05-21 01:04:51,653: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:04:51,656: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:04:51,657: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:04:51,657: INFO: common]: Directory created at: artifacts/data_transformation
+[2026-05-21 01:04:51,930: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 01:04:51,987: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/config.json "HTTP/1.1 200 OK"
+[2026-05-21 01:04:52,164: INFO: _client]: HTTP Request: HEAD https://huggingface.co/google/pegasus-cnn_dailymail/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+[2026-05-21 01:04:52,165: WARNING: _http]: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[2026-05-21 01:04:52,194: INFO: _client]: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/google/pegasus-cnn_dailymail/40d588fdab0cc077b80d950b300bf66ad3c75b92/tokenizer_config.json "HTTP/1.1 200 OK"
+[2026-05-21 01:04:52,374: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+[2026-05-21 01:04:52,533: INFO: _client]: HTTP Request: GET https://huggingface.co/api/models/google/pegasus-cnn_dailymail/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+[2026-05-21 01:04:55,175: INFO: main]: Stage Data Transformation stage completed.
+[2026-05-21 01:04:55,176: INFO: main]: stage Model training stage initiated
+[2026-05-21 01:04:55,178: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:04:55,182: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:04:55,183: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:04:55,183: INFO: common]: Directory created at: artifacts/model_trainer
+[2026-05-21 01:04:55,185: INFO: main]: Stage Model training stage completed.
+[2026-05-21 01:04:55,185: INFO: main]: stage Model evaluation stage initiated
+[2026-05-21 01:04:55,187: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:04:55,189: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:04:55,191: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:04:55,191: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:06:29,774: INFO: rouge_scorer]: Using default tokenizer.
+[2026-05-21 01:06:30,104: INFO: main]: Stage Model evaluation stage completed.
+[2026-05-21 01:10:15,887: INFO: server]: Started server process [6988]
+[2026-05-21 01:10:15,889: INFO: on]: Waiting for application startup.
+[2026-05-21 01:10:15,889: INFO: on]: Application startup complete.
+[2026-05-21 01:10:15,890: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:13:43,591: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:13:43,598: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:13:43,598: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:13:43,599: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:13:44,139: ERROR: h11_impl]: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 41, in predict_route
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 38, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline("summarization", model = self.config.model_path, tokenizer = tokenizer)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-05-21 01:13:59,833: INFO: server]: Shutting down
+[2026-05-21 01:13:59,944: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:13:59,945: INFO: on]: Application shutdown complete.
+[2026-05-21 01:13:59,946: INFO: server]: Finished server process [6988]
+[2026-05-21 01:16:35,939: INFO: server]: Started server process [25048]
+[2026-05-21 01:16:35,939: INFO: on]: Waiting for application startup.
+[2026-05-21 01:16:35,948: INFO: on]: Application startup complete.
+[2026-05-21 01:16:35,949: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:16:44,715: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:16:44,719: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:16:44,719: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:16:44,719: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:16:45,163: ERROR: h11_impl]: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 41, in predict_route
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 38, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline(task="text2text-generation", model = self.config.model_path, tokenizer = tokenizer)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+KeyError: "Unknown task text2text-generation, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-05-21 01:17:44,293: INFO: server]: Shutting down
+[2026-05-21 01:17:44,405: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:17:44,405: INFO: on]: Application shutdown complete.
+[2026-05-21 01:17:44,405: INFO: server]: Finished server process [25048]
+[2026-05-21 01:17:54,987: INFO: server]: Started server process [23332]
+[2026-05-21 01:17:54,987: INFO: on]: Waiting for application startup.
+[2026-05-21 01:17:54,991: INFO: on]: Application startup complete.
+[2026-05-21 01:17:54,991: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:18:01,284: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:18:01,284: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:18:01,284: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:18:01,284: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:18:01,744: ERROR: h11_impl]: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 41, in predict_route
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 38, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+KeyError: "Unknown task text2text-generation, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-05-21 01:18:11,388: INFO: server]: Shutting down
+[2026-05-21 01:18:11,503: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:18:11,504: INFO: on]: Application shutdown complete.
+[2026-05-21 01:18:11,505: INFO: server]: Finished server process [23332]
+[2026-05-21 01:19:05,107: INFO: server]: Started server process [22020]
+[2026-05-21 01:19:05,108: INFO: on]: Waiting for application startup.
+[2026-05-21 01:19:05,108: INFO: on]: Application startup complete.
+[2026-05-21 01:19:05,110: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:19:10,236: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:19:10,236: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:19:10,243: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:19:10,243: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:19:10,730: ERROR: h11_impl]: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 41, in predict_route
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 38, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-05-21 01:22:22,306: INFO: server]: Shutting down
+[2026-05-21 01:22:22,412: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:22:22,412: INFO: on]: Application shutdown complete.
+[2026-05-21 01:22:22,412: INFO: server]: Finished server process [22020]
+[2026-05-21 01:23:03,940: INFO: server]: Started server process [16980]
+[2026-05-21 01:23:03,940: INFO: on]: Waiting for application startup.
+[2026-05-21 01:23:03,940: INFO: on]: Application startup complete.
+[2026-05-21 01:23:03,940: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:23:21,238: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:23:21,244: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:23:21,244: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:23:21,247: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:23:21,756: ERROR: h11_impl]: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 404, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\applications.py", line 269, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 93, in __call__
+    raise exc
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 670, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 266, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\starlette\routing.py", line 65, in app
+    response = await func(request)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 227, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\fastapi\routing.py", line 160, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 41, in predict_route
+    raise e
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\app.py", line 38, in predict_route
+    text = obj.predict(text)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\src\textsummarizer\pipeline\prediction_pipeline.py", line 13, in predict
+    pipe = pipeline("summarization", model = self.config.model_path, tokenizer = tokenizer)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 777, in pipeline
+    normalized_task, targeted_task, task_options = check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\__init__.py", line 381, in check_task
+    return PIPELINE_REGISTRY.check_task(task)
+  File "C:\Users\Korisnik\Desktop\ml_projects\summerizer\TextSummarizer\venv\lib\site-packages\transformers\pipelines\base.py", line 1356, in check_task
+    raise KeyError(
+KeyError: "Unknown task summarization, available tasks are ['any-to-any', 'audio-classification', 'automatic-speech-recognition', 'depth-estimation', 'document-question-answering', 'feature-extraction', 'fill-mask', 'image-classification', 'image-feature-extraction', 'image-segmentation', 'image-text-to-text', 'image-to-image', 'keypoint-matching', 'mask-generation', 'ner', 'object-detection', 'question-answering', 'sentiment-analysis', 'table-question-answering', 'text-classification', 'text-generation', 'text-to-audio', 'text-to-speech', 'token-classification', 'video-classification', 'visual-question-answering', 'vqa', 'zero-shot-audio-classification', 'zero-shot-classification', 'zero-shot-image-classification', 'zero-shot-object-detection', 'translation_XX_to_YY']"
+[2026-05-21 01:24:03,856: INFO: server]: Shutting down
+[2026-05-21 01:24:03,965: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:24:03,967: INFO: on]: Application shutdown complete.
+[2026-05-21 01:24:03,968: INFO: server]: Finished server process [16980]
+[2026-05-21 01:24:12,053: INFO: server]: Started server process [20372]
+[2026-05-21 01:24:12,053: INFO: on]: Waiting for application startup.
+[2026-05-21 01:24:12,053: INFO: on]: Application startup complete.
+[2026-05-21 01:24:12,059: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:24:20,339: INFO: server]: Shutting down
+[2026-05-21 01:24:20,452: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:24:20,452: INFO: on]: Application shutdown complete.
+[2026-05-21 01:24:20,452: INFO: server]: Finished server process [20372]
+[2026-05-21 01:24:26,823: INFO: server]: Started server process [10772]
+[2026-05-21 01:24:26,823: INFO: on]: Waiting for application startup.
+[2026-05-21 01:24:26,823: INFO: on]: Application startup complete.
+[2026-05-21 01:24:26,823: INFO: server]: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[2026-05-21 01:24:35,852: INFO: common]: YAML file config\config.yaml loaded successfully.
+[2026-05-21 01:24:35,852: INFO: common]: YAML file params.yaml loaded successfully.
+[2026-05-21 01:24:35,852: INFO: common]: Directory created at: artifacts
+[2026-05-21 01:24:35,852: INFO: common]: Directory created at: artifacts/model_evaluation
+[2026-05-21 01:25:28,926: INFO: server]: Shutting down
+[2026-05-21 01:25:29,027: INFO: on]: Waiting for application shutdown.
+[2026-05-21 01:25:29,028: INFO: on]: Application shutdown complete.
+[2026-05-21 01:25:29,028: INFO: server]: Finished server process [10772]
